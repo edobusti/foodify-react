@@ -4,6 +4,15 @@ Foodify (React.js Version) is an upgraded version of my previous project, now bu
 
 **Note**: This application is designed for desktop use only and is not mobile responsive.
 
+## Features
+
+- **Search for Meals**: Users can search for their favorite recipes.
+- **View Ingredients**: Each recipe displays the necessary ingredients.
+- **Save Recipes**: Users can save their favorite recipes for easy access later.
+- **Step-by-Step Tutorial**: View step-by-step instructions for preparing meals.
+- **Asynchronous Data Fetching**: Smooth data retrieval with asynchronous functions for a better user experience.
+- **Error Handling**: Robust error handling to manage issues like failed API requests or missing data.
+
 ## Additional Features
 
 - **Reusable Components**: Built modular, reusable components to ensure scalability and maintainability of the app.
