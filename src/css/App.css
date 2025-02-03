@@ -1,0 +1,15 @@
+.app {
+  position: relative;
+  margin: 0 auto;
+  min-width: 110rem;
+  max-width: 130rem;
+  height: 78rem;
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 10.2rem 1fr;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0.4rem 0.8rem -0.2rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  font-size: 1.6rem;
+}

@@ -1,0 +1,24 @@
+@import url(./css/App.css);
+@import url(./css/Nav.css);
+@import url(./css/MealResults.css);
+@import url(./css/MealView.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 400;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+body {
+  padding: 8rem 3.4rem;
+  background: linear-gradient(135deg, #71bd00, #429321);
+  height: 100vh;
+}

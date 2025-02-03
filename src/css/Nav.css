@@ -1,0 +1,126 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / -1;
+  background-color: #f4f9f3;
+  padding: 2.4rem 3.2rem;
+}
+
+.logo {
+  height: 5rem;
+}
+
+.search-box {
+  position: relative;
+  right: -3.2rem;
+  width: 33%;
+}
+
+.search-box input {
+  font-size: 1.6rem;
+}
+
+.search-bar {
+  padding: 0 1.8rem;
+  border: 0.1rem transparent;
+  border-radius: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0.4rem 0.8rem -0.2rem;
+  outline: none;
+  height: 5rem;
+  width: 100%;
+}
+
+.search-bar::placeholder {
+  opacity: 0.8;
+}
+
+.search-btn {
+  font-size: 1.6rem;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  padding: 0 1.6rem;
+  border: 0.1rem transparent;
+  border-radius: 5rem;
+  background: linear-gradient(135deg, #71bd00, #429321);
+  color: #fff;
+  transition: 150ms;
+}
+
+.search-btn-text {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.search-icon {
+  height: 2rem;
+}
+
+.search-btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.bookmarks {
+  position: relative;
+  right: -3.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 10rem;
+  padding: 0 3.2rem;
+  transition: 150ms;
+}
+
+.bookmarks:hover {
+  background-color: #e0ecdf;
+}
+
+.bookmark-icon {
+  height: 2.8rem;
+}
+
+.bookmarks-view {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 32rem;
+  max-height: calc(9.6rem * 6);
+  overflow-y: scroll;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.bookmarks-view::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.bookmarks-view::-webkit-scrollbar-thumb {
+  background-color: #00802b;
+  border-radius: 0.8rem;
+}
+
+.bookmarks-view.active {
+  display: block;
+  animation: fade-in 250ms;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bookmarks-view-empty {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 3.2rem 3.2rem;
+}

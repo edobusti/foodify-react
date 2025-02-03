@@ -1,0 +1,166 @@
+.meal-view {
+  position: relative;
+  mask-image: linear-gradient(180deg, #000 94%, transparent);
+  background-color: #f4f9f3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.meal-view::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.meal-view::-webkit-scrollbar-thumb {
+  background-color: #00802b;
+  border-radius: 0.8rem;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner img {
+  height: 6.4rem;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.meal-view-image {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0.4rem 0.8rem -0.2rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.meal-view-title {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #71bd00, #429321);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0.4rem 0.8rem -0.2rem;
+  padding: 1.2rem 1.8rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.bookmark-meal {
+  position: absolute;
+  bottom: -2.2rem;
+  right: 3.2rem;
+  background-color: #429321;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  transition: 150ms;
+}
+
+.bookmark-meal:hover {
+  transform: scale(1.05);
+}
+
+.bookmark-meal-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2.4rem;
+}
+
+.bookmark-meal-icon:hover {
+  cursor: pointer;
+}
+
+.bookmark-meal-icon.active {
+  fill: #fff;
+}
+
+.meal-view-ingredients {
+  padding: 3.2rem 3.6rem;
+}
+.meal-view-description {
+  padding: 0 3.6rem;
+  padding-bottom: 3.2rem;
+}
+
+.ingredients-title,
+.intructions-title {
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.ingredients-title img,
+.intructions-title img {
+  height: 2.8rem;
+}
+
+.ingredients-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2.4rem;
+  row-gap: 1.2rem;
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ingredient-item img {
+  height: 1.6rem;
+}
+
+.instruction-item {
+  margin-bottom: 3.2rem;
+}
+
+.tutorial-btn {
+  text-decoration: none;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 1.6rem;
+  border: 0.1rem transparent;
+  border-radius: 5rem;
+  background: linear-gradient(135deg, #71bd00, #429321);
+  color: #fff;
+  transition: 150ms;
+}
+
+.tutorial-btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.tutorial-btn img {
+  height: 2.4rem;
+}
+
+.default-message-view {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  height: 24rem;
+}
