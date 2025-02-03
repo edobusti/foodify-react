@@ -9,6 +9,7 @@ Foodify (React.js Version) is an upgraded version of my previous project, now bu
 - **Reusable Components**: Built modular, reusable components to ensure scalability and maintainability of the app.
 - **Custom Hooks**: Created custom hooks to encapsulate logic and improve code reusability.
 - **Prop Drilling**: Implemented prop drilling to pass data through multiple layers of components.
+- **Pixel-perfect design**: Every detail is crafted with precision to ensure a flawless user experience.
 
 ## Technologies Used
 
